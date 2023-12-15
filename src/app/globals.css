@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Sarabun:wght@100&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
+/* :root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+} */
+
+@layer base {
+  .font-Sansita {
+    font-family: "Sansita", sans-serif !important;
+    /* font-family: "Sarabun", sans-serif !important; */
+  }
+  .font-Open-Sans {
+    font-family: "Open Sans", sans-serif !important;
+  }
+  .font-Barlow {
+    font-family: "Barlow", sans-serif !important;
+    /* font-family: "Barlow Condensed", sans-serif;
+  font-family: "Sansita", sans-serif; */
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+#nav {
+  box-shadow: 0px 2px 20px 0px rgba(26, 17, 20, 0.1);
+}
+.triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 25px solid transparent;
+  border-left: 50px solid #555;
+  border-bottom: 25px solid transparent;
+}
+
+.card-proud {
+  box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1);
+}
+
+.our-tem-card {
+  box-shadow: 0px 4px 30px 0px rgba(10, 30, 35, 0.1);
+}
